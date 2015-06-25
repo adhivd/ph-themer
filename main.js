@@ -1,5 +1,29 @@
 function addThemeChooser() {
 
+	alert('Starting');
+
+	var select = document.createElement('select');
+	var opt1 = document.createElement('option');
+	var opt1Text = document.createTextNode('Dark Theme');
+	var opt2 = document.createElement('option');
+	var opt2Text = document.createTextNode('Crazy Theme');
+
+
+	select.appendChild(opt1);
+	select.appendChild(opt2);
+	opt1.appendChild(opt1Text);
+	opt2.appendChild(opt2Text);
+
+
+	alert('Got past the creating dropdown');
+
+	var selectorLocation = document.querySelectorAll("[class=\"brand\"]");
+
+	alert('Got past the selectorLocation');
+
+	selectorLocation[0].appendChild(select);
+
+	alert('successfully appended');
 }
 
 function removeCSSFile(src) {
