@@ -1,14 +1,7 @@
 function addThemeChooser() {
 
-	var dropdownHtml = "<select id=\"theme--chooser\">
-							<option value=\"dark\">Dark Theme</option>
-							<option value=\"crazy\">Crazy Theme</option>
-						</select>"
-
-	/*var select = document.createElement('select');
-	select.id = "theme-chooser";
+	var select = document.createElement('select');
 	var opt1 = document.createElement('option');
-	var value1 = 
 	var opt1Text = document.createTextNode('Dark Theme');
 	var opt2 = document.createElement('option');
 	var opt2Text = document.createTextNode('Crazy Theme');
@@ -16,11 +9,11 @@ function addThemeChooser() {
 	select.appendChild(opt1);
 	select.appendChild(opt2);
 	opt1.appendChild(opt1Text);
-	opt2.appendChild(opt2Text); */
+	opt2.appendChild(opt2Text);
 
 	var selectorLocation = document.querySelectorAll("[class=\"header--search\"]");
 
-	selectorLocation[0].appendChild(dropdownHTML);
+	selectorLocation[0].appendChild(select);
 }
 
 function removeCSSFile(src) {
@@ -45,8 +38,6 @@ function addCSSFile(src) {
 }
 
 function setTheme() {
-
-	select.onChange = addCSSFile(filePath);
 
 }
 
