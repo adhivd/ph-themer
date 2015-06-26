@@ -1,19 +1,24 @@
+
+var themes = {
+	"Crazy": "themes/crazy.css",
+	"Dark": "themes/dark.css"
+};
+
+var select;
+
 function addThemeChooser() {
 
-	var select = document.createElement('select');
-	var opt1 = document.createElement('option');
-	var opt1Text = document.createTextNode('Dark Theme');
-	var opt2 = document.createElement('option');
-	var opt2Text = document.createTextNode('Crazy Theme');
+	select = document.createElement('select');
+	for(var key in themes)
+	{
+		var option = document.createElement('option');
+		option.appendChild(document.createTextNode(key + ' Theme'));
+		select.appendChild(option);
+	}
 
-	select.appendChild(opt1);
-	select.appendChild(opt2);
-	opt1.appendChild(opt1Text);
-	opt2.appendChild(opt2Text);
+	var selectorLocation = document.querySelector(".header--search");
 
-	var selectorLocation = document.querySelectorAll("[class=\"header--search\"]");
-
-	selectorLocation[0].appendChild(select);
+	selectorLocation.appendChild(select);
 }
 
 function removeCSSFile(src) {
@@ -38,6 +43,11 @@ function addCSSFile(src) {
 }
 
 function setTheme() {
+	select.addEventListener("change", ughFunction);
+	
+	function ughFunction() {
+		if(select.)
+	}
 
 }
 
@@ -48,6 +58,8 @@ var filePath = chrome.extension.getURL(path);
 addCSSFile(filePath);
 
 addThemeChooser();
+
+setTheme();
 
 //removeCSSFile(filePath);
 // done on purpose to keep color change in effect!
