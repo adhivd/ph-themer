@@ -15,7 +15,6 @@ function addThemeChooser() {
 		option.value = key;
 		option.appendChild(document.createTextNode(key + ' Theme'));
 		select.appendChild(option);
-		
 	}
 
 	var selectorLocation = document.querySelector(".header--search");
@@ -25,7 +24,7 @@ function addThemeChooser() {
 
 function removeCSSFiles() {
 
-	var headList = document.querySelectorAll("[data-columns=\"" + 10 + "\"]");
+	var headList = document.querySelectorAll("[data-phtheme]");
 
 	for(var i = 0; i < headList.length; i++)
 	{
@@ -40,7 +39,7 @@ function addCSSFile(src) {
 	var linkEl = document.createElement("link");
 	linkEl.rel = "stylesheet";
 	linkEl.href = src;
-	linkEl.dataset.columns = 10;
+	linkEl.dataset.phtheme = "true";
 
 	document.getElementsByTagName("head")[0].appendChild(linkEl);
 }
