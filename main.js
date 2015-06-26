@@ -23,9 +23,9 @@ function addThemeChooser() {
 	selectorLocation.appendChild(select);
 }
 
-function removeCSSFile(src) {
+function removeCSSFiles() {
 
-	var headList = document.querySelectorAll("[href=\"" + src + "\" ]");
+	var headList = document.querySelectorAll("[data-columns=\"" + 10 + "\"]");
 
 	for(var i = 0; i < headList.length; i++)
 	{
@@ -40,6 +40,7 @@ function addCSSFile(src) {
 	var linkEl = document.createElement("link");
 	linkEl.rel = "stylesheet";
 	linkEl.href = src;
+	linkEl.dataset.columns = 10;
 
 	document.getElementsByTagName("head")[0].appendChild(linkEl);
 }
@@ -52,6 +53,7 @@ function setTheme() {
 		var path = themes[select.value];
 		
 		filePath = chrome.extension.getURL(path);
+		removeCSSFiles();
 		addCSSFile(filePath);
 	}
 }
