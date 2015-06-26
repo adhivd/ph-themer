@@ -1,5 +1,6 @@
 
 var themes = {
+	"Default": null,
 	"Crazy": "themes/crazy.css",
 	"Dark": "themes/dark.css"
 };
@@ -28,9 +29,9 @@ function removeCSSFiles() {
 
 	for(var i = 0; i < headList.length; i++)
 	{
-			var removeEl = headList[i];
-			var parentEl = removeEl.parentNode;
-			parentEl.removeChild(removeEl);
+		var removeEl = headList[i];
+		var parentEl = removeEl.parentNode;
+		parentEl.removeChild(removeEl);
 	}
 
 }
@@ -47,13 +48,17 @@ function addCSSFile(src) {
 function setTheme() {
 	select.addEventListener("change", ughFunction);
 	
-	function ughFunction() {
-		var filePath;
+	function ughFunction() {		
+		removeCSSFiles();
+		
 		var path = themes[select.value];
 		
-		filePath = chrome.extension.getURL(path);
-		removeCSSFiles();
-		addCSSFile(filePath);
+		if(path == null)
+		{
+			return;
+		}
+
+		addCSSFile(chrome.extension.getURL(path));
 	}
 }
 
