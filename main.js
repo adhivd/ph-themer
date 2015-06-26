@@ -12,8 +12,10 @@ function addThemeChooser() {
 	for(var key in themes)
 	{
 		var option = document.createElement('option');
+		option.value = key;
 		option.appendChild(document.createTextNode(key + ' Theme'));
 		select.appendChild(option);
+		
 	}
 
 	var selectorLocation = document.querySelector(".header--search");
@@ -46,16 +48,13 @@ function setTheme() {
 	select.addEventListener("change", ughFunction);
 	
 	function ughFunction() {
-		if(select.)
+		var filePath;
+		var path = themes[select.value];
+		
+		filePath = chrome.extension.getURL(path);
+		addCSSFile(filePath);
 	}
-
 }
-
-var path = 'themes/dark.css';
-
-var filePath = chrome.extension.getURL(path);
-
-addCSSFile(filePath);
 
 addThemeChooser();
 
