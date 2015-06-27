@@ -1,5 +1,5 @@
 body, header, .post-item, .header--secondary {
-    background-color: #000 !important;
+    background-color: #222 !important;
 }
 
 .post-item--text--name {
@@ -36,3 +36,15 @@ span.post-vote-button--arrow > svg > path {
     .dropdown-menu--list li a:hover {
         background-color: #555 !important;
     }
+    
+.user-card--name {
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+}
+
+.popover--scrollable-list--element:hover {
+    background-color: #555 !important;
+}
