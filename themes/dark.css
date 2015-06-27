@@ -2,6 +2,11 @@ body, header, .post-item, .header--secondary, .post-detail--body, .post-detail--
     background-color: #222 !important;
 }
 
+.header--secondary,
+.header--primary {
+    border-bottom: 1px solid #666;
+}
+
 .post-item--text--name {
     color: #fff !important;
 }
