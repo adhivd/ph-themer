@@ -48,3 +48,18 @@ span.post-vote-button--arrow > svg > path {
 .popover--scrollable-list--element:hover {
     background-color: #555 !important;
 }
+
+.m-search-focus .header--search--wrapper,
+.header--search--wrapper.input-wrapper {
+    background-color: #222;
+}
+
+#search-field {
+    opacity: 1;
+    background-color: #555;
+    color: #fff;
+}
+
+.header--search path {
+    fill: #fff !important;
+}
