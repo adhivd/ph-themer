@@ -101,3 +101,12 @@ span.post-vote-button--arrow > svg > path {
 .activity--link:hover {
     background-color: #555;
 }
+
+.featured-collections--title {
+    color: #fff;
+}
+
+
+.collections--share {
+    background-color: #333;
+}
