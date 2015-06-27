@@ -1,3 +1,38 @@
 body, header, .post-item, .header--secondary {
     background-color: #000 !important;
 }
+
+.post-item--text--name {
+    color: #fff !important;
+}
+    .post-item--text a:visited {
+        color: #bbb !important;
+    }
+
+span.post-vote-button--arrow > svg > path {
+    fill: #fff !important;
+}
+.post-vote-button--count {
+    color: #fff !important;
+}
+
+/* upvoted */
+.m-upvoted span.post-vote-button--arrow > svg > path {
+    fill: #da552f !important;
+}
+.m-upvoted .post-vote-button--count {
+    color: #da552f !important;
+}
+
+.popover {
+    background: #333;
+}
+    .popover:after {
+        border-bottom-color: #333 !important;
+    }
+    .dropdown-menu--list li a {
+        color: #fff !important;
+    }
+    .dropdown-menu--list li a:hover {
+        background-color: #555 !important;
+    }
