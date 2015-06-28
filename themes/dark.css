@@ -1,3 +1,112 @@
-body, header, .post-item, .header--secondary {
-    background-color: #000 !important;
+body, header, .post-item, .header--secondary, .post-detail--body, .post-detail--footer, .post-detail aside {
+    background-color: #222 !important;
+}
+
+.header--secondary,
+.header--primary {
+    border-bottom: 1px solid #666;
+}
+
+.post-item--text--name {
+    color: #fff !important;
+}
+    .post-item--text a:visited {
+        color: #bbb !important;
+    }
+
+span.post-vote-button--arrow > svg > path {
+    fill: #fff !important;
+}
+.post-vote-button--count {
+    color: #fff !important;
+}
+
+/* upvoted */
+.m-upvoted span.post-vote-button--arrow > svg > path {
+    fill: #da552f !important;
+}
+.m-upvoted .post-vote-button--count {
+    color: #da552f !important;
+}
+
+.popover {
+    background: #333;
+}
+    .popover:after {
+        border-bottom-color: #333 !important;
+    }
+    .dropdown-menu--list li a {
+        color: #fff !important;
+    }
+    .dropdown-menu--list li a:hover {
+        background-color: #555 !important;
+    }
+    
+.user-card--name {
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+}
+
+.popover--scrollable-list--element:hover {
+    background-color: #555 !important;
+}
+
+.m-search-focus .header--search--wrapper,
+.header--search--wrapper.input-wrapper {
+    background-color: #222;
+}
+
+#search-field {
+    opacity: 1;
+    background-color: #555;
+    color: #fff;
+}
+
+.header--search path {
+    fill: #fff !important;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+    .modal--content {
+        border-left: none;
+        background-color: #222;
+    }
+    
+    
+.post-detail--body--comments--item--heading--name {
+    color: #fff;
+}
+.post-detail--body--comments--item--body {
+    color: #ccc;
+}
+.post-detail--body--placeholder,
+.post-detail--body--placeholder.v-white {
+    background-color: #333;
+}
+.carousel--controls--button {
+    background: rgba(250, 250, 250, 0.2);
+}
+
+.activity--headline{
+    color: #fff;
+}
+.activity.m-seen {
+    opacity: 0.7;
+}
+.activity--link:hover {
+    background-color: #555;
+}
+
+.featured-collections--title {
+    color: #fff;
+}
+
+
+.collections--share {
+    background-color: #333;
 }
