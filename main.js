@@ -1,4 +1,3 @@
-
 var themes = {
 	"Default": null,
 	"Crazy": "themes/crazy.css",
@@ -48,18 +47,32 @@ function addCSSFile(src) {
 function setTheme() {
 	select.addEventListener("change", ughFunction);
 	
-	function ughFunction() {		
+	function ughFunction() {
 		removeCSSFiles();
-		
-		var path = themes[select.value];
-		
+
+        var path = select.value;
+
+        localStorage.setItem('name', path);
+
 		if(path == null)
 		{
 			return;
 		}
 
-		addCSSFile(chrome.extension.getURL(path));
+		addCSSFile(chrome.extension.getURL(themes[path]));
+        return;
 	}
+    
+    var stored = localStorage.getItem('name');
+    
+    select.value = stored;
+    
+    if(stored == null)
+    {
+        return;
+    }
+    
+    addCSSFile(chrome.extension.getURL(themes[stored]));     
 }
 
 addThemeChooser();

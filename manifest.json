@@ -8,7 +8,8 @@
         "js": [
             "main.js"
         ],
-        "matches":          [   "*://*.producthunt.com/*"
+        "matches":          [   "*://*.producthunt.com/*",
+                                "file:///Users/adhivd/Downloads/Better%20Product%20Hunt.html"
                             ],
         "run_at": "document_end",
         "all_frames": false
