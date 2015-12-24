@@ -16,10 +16,13 @@ function addThemeChooser() {
 		option.appendChild(document.createTextNode(key + ' Theme'));
 		select.appendChild(option);
 	}
+	var phNavMenu = document.getElementsByClassName('header--nav-items');
+	var newSelectorLocation = phNavMenu[phNavMenu.length - 1];
+	newSelectorLocation.appendChild(select);
 
-	var selectorLocation = document.querySelector(".header--search");
+	//var selectorLocation = document.querySelector(".header--search-form");
 
-	selectorLocation.appendChild(select);
+	//selectorLocation.appendChild(select);
 }
 
 function removeCSSFiles() {

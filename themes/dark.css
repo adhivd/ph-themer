@@ -1,5 +1,35 @@
 body, header, .post-item, .header--secondary, .post-detail--body, .post-detail--footer, .post-detail aside {
     background-color: #222 !important;
+    font:white;
+    color: white;
+}
+
+.default_tBeAo {
+    color:white;
+}
+
+.link_3X70Q {
+    border-bottom: 1px solid #444;
+}
+
+.button__kqgo {
+    border-left: 1px solid #444;
+}
+
+.voteButton_35RG2 {
+    border-right: 1px solid #444;
+}
+
+.frontpage--section--heading {
+    border-bottom: 1px solid #444;
+}
+
+.frontpage--section--heading--primary {
+    color: white;
+}
+
+.header--nav-item {
+    color:white;
 }
 
 .header--secondary,
@@ -109,4 +139,12 @@ span.post-vote-button--arrow > svg > path {
 
 .collections--share {
     background-color: #333;
+}
+
+.gradientLeft_3-CUL {
+    background: linear-gradient(90deg,#222 0,hsla(0,0%,100%,0));
+}
+
+.gradientRight_1TFyz {
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#222);
 }
