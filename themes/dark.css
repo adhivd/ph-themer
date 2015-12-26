@@ -4,8 +4,47 @@ body, header, .post-item, .header--secondary, .post-detail--body, .post-detail--
     color: white;
 }
 
+.carousel--controls--button:hover {
+    background: #bebebe;
+}
+
+.carousel--controls--button {
+    background: #999 !important;
+}
+
+.post-detail aside, .ama-event-detail aside {
+    border-left: 1px solid #444;
+}
+
+.comments--item--heading--title {
+    color: #666;
+}
+
+.comments--item--heading--name {
+    color: #999;
+}
+
+.comments--item--body {
+    color: #999;
+}
+
 .default_tBeAo {
     color:white;
+}
+
+.header--search-form--field {
+    background: #333;
+    border: 1px solid #999;
+    color: #999;
+}
+
+.post-vote-button.v-bordered {
+    border: 1px solid #fff;
+    background:none;
+}
+
+.date_F-aTQ {
+    border: 1px solid #444;
 }
 
 .link_3X70Q {
